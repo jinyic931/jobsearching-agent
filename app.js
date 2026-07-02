@@ -116,7 +116,7 @@ function analyze() {
 
   const topMatched = matched.slice(0, 5).join("、") || "AI 项目实践";
   const topMissing = missing.slice(0, 3).join("、") || "岗位核心要求";
-  pitchText.textContent = `我做过一个面向投递场景的 OfferFit Agent 小工具，围绕 ${topMatched} 构建本地分析流程，可以把岗位描述拆成需求信号，再和个人经历进行匹配，输出匹配分、关键词缺口和可复用的投递说明。下一步可继续补充 ${topMissing} 的案例或指标，让作品更贴近目标岗位。`;
+  pitchText.textContent = `我做过一个面向投递场景的 JobSearching Agent 小工具，围绕 ${topMatched} 构建本地分析流程，可以把岗位描述拆成需求信号，再和个人经历进行匹配，输出匹配分、关键词缺口和可复用的投递说明。下一步可继续补充 ${topMissing} 的案例或指标，让作品更贴近目标岗位。`;
 
   adviceList.innerHTML = "";
   buildAdvice(matched, missing, score).forEach((text) => {
