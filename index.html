@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OfferFit Agent - AI 投递匹配助手</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/agent-mark.svg" alt="" />
+        <div>
+          <p class="eyebrow">AI Agent Demo</p>
+          <h1>OfferFit Agent</h1>
+        </div>
+      </div>
+      <button class="ghost-button" id="loadSample" type="button">载入示例</button>
+    </header>
+
+    <main class="workspace">
+      <section class="input-panel" aria-label="输入区">
+        <label class="field">
+          <span>个人经历 / 项目 / 简历片段</span>
+          <textarea id="resumeInput" spellcheck="false" placeholder="粘贴你的项目经历、技能栈、实习经历..."></textarea>
+        </label>
+        <label class="field">
+          <span>岗位描述 / 投递要求</span>
+          <textarea id="jdInput" spellcheck="false" placeholder="粘贴 JD、岗位职责、任职要求..."></textarea>
+        </label>
+        <div class="actions">
+          <button class="primary-button" id="analyzeBtn" type="button">生成匹配报告</button>
+          <button class="secondary-button" id="clearBtn" type="button">清空</button>
+        </div>
+      </section>
+
+      <section class="output-panel" aria-label="分析结果">
+        <div class="score-band">
+          <div class="score-ring" id="scoreRing" style="--score: 0">
+            <span id="scoreValue">0</span>
+          </div>
+          <div>
+            <p class="eyebrow">Fit Score</p>
+            <h2 id="scoreTitle">等待分析</h2>
+            <p id="scoreSummary">输入内容后，agent 会拆解岗位需求并生成投递匹配建议。</p>
+          </div>
+        </div>
+
+        <div class="pipeline" id="pipeline">
+          <div class="node idle">解析</div>
+          <div class="node idle">匹配</div>
+          <div class="node idle">补齐</div>
+          <div class="node idle">生成</div>
+        </div>
+
+        <div class="result-grid">
+          <article class="result-block">
+            <h3>命中关键词</h3>
+            <div class="tag-list" id="matchedTags"></div>
+          </article>
+          <article class="result-block">
+            <h3>缺口关键词</h3>
+            <div class="tag-list" id="missingTags"></div>
+          </article>
+          <article class="result-block wide">
+            <h3>投递说明</h3>
+            <p id="pitchText" class="pitch">暂无内容。</p>
+          </article>
+          <article class="result-block wide">
+            <h3>优化建议</h3>
+            <ul id="adviceList"></ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

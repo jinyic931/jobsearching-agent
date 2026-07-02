@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="OfferFit Agent mark">
+  <rect x="7" y="7" width="82" height="82" rx="18" fill="#0f7c80"/>
+  <path d="M25 62V35.5C25 29.7 29.7 25 35.5 25h25C66.3 25 71 29.7 71 35.5v25C71 66.3 66.3 71 60.5 71H34" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="39" cy="46" r="5" fill="#ffffff"/>
+  <circle cx="57" cy="46" r="5" fill="#ffffff"/>
+  <path d="M38 58c5.7 4 14.3 4 20 0" fill="none" stroke="#f3b36b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M22 25l-8-8M74 25l8-8M48 13V4" stroke="#c05a2b" stroke-width="5" stroke-linecap="round"/>
+</svg>
