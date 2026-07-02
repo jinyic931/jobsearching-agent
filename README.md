@@ -10,26 +10,12 @@
 - 生成一段可直接用于投递的作品说明
 - 纯前端本地运行，无需后端服务，方便部署到 GitHub Pages
 
-## 适合投递时这样写
-
-作品名称：JobSearching Agent - 岗位匹配度 AI 助手
-
-作品简介：独立完成的 AI agent demo，面向实习投递场景，支持粘贴个人经历和岗位描述，自动抽取岗位关键词并生成匹配度报告。项目展示了需求拆解、关键词抽取、匹配评分、内容生成和前端交互能力，可作为 AI 产品/AI 应用方向的个人作品。
 
 ## 使用方式
 
 直接打开 `index.html`，点击“载入示例”或粘贴自己的经历和 JD 后生成报告。
 
-## 文件结构
 
-```text
-jobsearching-agent/
-  index.html
-  style.css
-  app.js
-  assets/
-    agent-mark.svg
-```
 
 ## 后续可扩展
 
